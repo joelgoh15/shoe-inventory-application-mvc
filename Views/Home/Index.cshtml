@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Portfolio5_1.Models.ClassListView>
+
+@{
+    //ViewBag.Title = "Index";
+    ViewBag.Title = "Shoe Item List";
+}
+
+@*<h2>Index</h2>*@
+<h2>Shoe Item - List</h2>
+
+<p>
+    @Html.ActionLink("(+) Shoe Item", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ShoeName)
+            @*@Html.Display("Shoe Name");*@
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShoePrice)
+            @*@Html.Display("Shoe Price");*@
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShoeSize)
+            @*@Html.Display("Shoe Size");*@
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShoeQuantity)
+            @*@Html.Display("Shoe Quantity");*@
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShoeName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShoePrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShoeSize)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShoeQuantity)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id }, new { onclick = "return confirm('Are you sure you wish to delete this shoe item?');" })
+        </td>
+    </tr>
+}
+
+</table>

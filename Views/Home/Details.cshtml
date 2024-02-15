@@ -1,0 +1,58 @@
+﻿@model Portfolio5_1.ShoeInventoryTable
+
+@{
+    ViewBag.Title = "Shoe Item - Details";
+}
+
+<h2>Shoe Item - Details</h2>
+
+<div>
+    @*<h4>ShoeInventoryTable</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ShoeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShoeName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShoeDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShoeDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShoePrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShoePrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShoeSize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShoeSize)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
