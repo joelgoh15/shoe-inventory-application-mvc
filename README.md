@@ -1,6 +1,4 @@
 # Shoe Inventory Application (MVC)
-
-## Introduction
 A shoe inventory application done in ASP.Net MVC5.
 
 ## Technical Details
