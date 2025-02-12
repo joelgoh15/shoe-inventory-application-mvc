@@ -1,13 +1,10 @@
-# Shoe Inventory Application (MVC)
+## Introduction
 A shoe inventory application done in ASP.Net MVC5.
 
 ## Technical Details
-<p>
-    1. A portfolio project with an emphasis in ASP.Net MVC5 for C.R.U.D operations.
-</p>
+A project with an emphasis in ASP.Net MVC5 for C.R.U.D operations.
 
-<p>
-  2. Technology stack and approach used:
+Technology stack and approach used:
     <ul>
         <ul>
             <li>HTML5</li>
